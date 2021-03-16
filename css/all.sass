@@ -1,0 +1,157 @@
+@import "reset"
+$text_color_lightgreen: #0c9
+$text_color_green: #00a67d
+$text_color_red: #e54991
+$icon_color_fb: #4460a0
+$icon_color_twi: #00aaec
+$font_size_h1: 32px
+$font_size_h2: 25px
+$font_size_h3: 20px
+
+.wrap
+    max-width: 960px
+    margin: 0 auto
+    .topbar
+        display: flex
+        justify-content: flex-end
+        background: #f6f6f6
+        ul
+            display: flex
+            align-items: center
+            li
+                margin: 2px 5px
+                a
+                    display: block
+                    font-size: 15px    
+                    img
+                        vertical-align: bottom
+                        margin-right: 3px
+                    .fb-color
+                        color: $icon_color_fb
+                    .twi-color
+                        color: $icon_color_twi
+    .top_nav
+        display: flex
+        justify-content: space-between
+        .logo
+            a
+                background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png)
+                text-indent: 101%
+                white-space: nowrap
+                overflow: hidden
+                width: 200px
+                height: 45px
+                padding-bottom: 5px
+        .menu
+            display: flex
+            align-items: center
+            li
+                position: relative
+                a
+                    padding: 12px 20px
+                    color: $text_color_lightgreen
+                a:hover
+                    border-bottom: 5px solid $text_color_lightgreen
+                .submenu_course_intro
+                    position: absolute
+                    width: 100%
+                    top: 35px
+                    z-index: 100
+                    background: #333
+                    border: solid 1px
+                    display: none
+                    li
+                        a
+                            text-align: center
+                            color: #f6f6f6
+                .submenu_course_intro.open
+                    display: block
+
+    .header
+        position: relative
+        h1.text
+            position: absolute
+            top: 30%
+            font-size: $font_size_h1
+            line-height: 50px
+            font-weight: bold
+            padding: 44px 0px 40px 20px
+            color: #fff
+            width: 100%
+            background: linear-gradient(to right, black, transparent)
+            z-index: 3
+    .main
+        margin-top: 40px
+        .boxs
+            display: flex
+            justify-content: space-evenly
+            .box
+                width: 30%
+                display: flex
+                flex-direction: column
+                align-items: center
+                box-shadow: 5px 3px 5px grey
+                border-radius: 10px
+                h2
+                    font-size: $font_size_h2
+                    padding: 15px
+                p
+                    font-size: 12px
+                    padding: 10px 20px
+        .course_info
+            margin-top: 40px
+            h3
+                margin-bottom: 20px
+                font-size: $font_size_h3
+                font-weight: bold
+                text-align: center
+            .course_contrast
+                margin: 0 auto
+                text-align: left
+                tr
+                    border-top: solid 1px
+                    border-bottom: solid 1px4
+                    border-color: grey
+                    th, td
+                        padding: 14px 60px
+                    th
+                        font-weight: bold
+                    td.color
+                        color: $text_color_green
+                tr.tablehead
+                    background-color: #f7f7f7
+        .contact
+            background: linear-gradient(#00644b, #009872)
+            margin-top: 40px
+            h3
+                color: #fff
+                font-size: $font_size_h3
+                text-align: center
+                padding: 20px
+                line-height: 30px
+            form
+                display: flex
+                justify-content: space-between
+                .msg
+                    margin: 5px 0px 30px 30px
+                    width: 50%
+                .contact_form
+                    width: 40%
+                    color: #fff
+                    display: flex
+                    flex-direction: column
+                    margin: 5px 50px 30px 0px
+                    #name, #phone, #mail
+                        margin: 10px 0px
+                    .btn
+                        width: 60px
+                        align-self: flex-end
+                        margin-top: 20px
+    .footer
+        display: flex
+        justify-content: space-between
+        margin: 10px 0px
+        p
+            font-size: 15px
+            padding-bottom: 5px
+            display: flex
