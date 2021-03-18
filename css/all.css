@@ -285,6 +285,7 @@ a {
 .wrap .main .contact form .msg {
   margin: 5px 0px 30px 30px;
   width: 50%;
+  border-radius: 20px;
 }
 
 .wrap .main .contact form .contact_form {
@@ -327,5 +328,24 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.wrap .footer p a {
+  color: red;
+}
+
+.wrap .footer p a:hover {
+  color: blue;
+}
+
+.top {
+  position: relative;
+}
+
+.top #top {
+  position: fixed;
+  font-size: 40px;
+  right: 20px;
+  bottom: 20px;
 }
 /*# sourceMappingURL=all.css.map */

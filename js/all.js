@@ -37,4 +37,10 @@ $(document).ready(function(){
         //     el: '.swiper-scrollbar',
         // },
     })
+    $(".top").click(function(event){
+        event.preventDefault();
+        $("html,body").animate({
+            scrollTop: 0
+        }, 700);
+    });
 });
